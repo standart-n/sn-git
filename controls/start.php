@@ -1,8 +1,8 @@
-<?php class main extends sn {
+<?php class start extends sn {
 
 function __construct() {
-	echo "hello";
-	
+	innerHTML("#main","hello, world!");
+	echo html();	
 }
 
 } ?>
