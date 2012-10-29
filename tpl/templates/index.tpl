@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Standart-N</title>
+<title>{$title}</title>
 <meta name="description" content="Standart-N" />
 <meta name="keywords" content="Standart-N" />
 <meta name="Revesit" content="3" />
