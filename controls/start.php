@@ -52,7 +52,7 @@ function getUrl() {
 	if (self::checkParams(array("action"))) {
 		switch (self::$url->action){
 		case "commit":
-			return self::checkParams(array("company","project","commit","line"));
+			return self::checkParams(array("company","project","line"));
 		break;
 		default: return false;
 		}
