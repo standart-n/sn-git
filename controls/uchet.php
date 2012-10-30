@@ -188,6 +188,7 @@ function getProjectId() {
 		case "sn-project": self::$project_id=24; return true; break;
 		case "sn-git": self::$project_id=25; return true; break;
 		case "sn-cashier": self::$project_id=26; return true; break;
+		case "sn-claims": self::$project_id=27; return true; break;
 	}
 	return false;
 }
