@@ -1,4 +1,4 @@
-<?php class uchet extends sn {
+<?php class git extends sn {
 	
 public static $status;
 public static $uchet_id;
