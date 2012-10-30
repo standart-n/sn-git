@@ -17,7 +17,7 @@ function __construct() {
 		
 }
 
-function commit() {
+function addClaim() {
 		if (self::getProjectId()) {
 			if (self::getUserId()) {
 				if (self::getPointId()) {
@@ -56,7 +56,7 @@ function getAnswerAfterBuildPacket($id=1) { $rg="";
 	switch ($id) {
 	case 1:
 		return toWIN("".
-					 "Новая заявка на сайте!!!".
+					 "Новая заявка на сайте!".
 					 "");
 	break;
 	case 2:
@@ -84,7 +84,7 @@ function insertIntoUchet() {
 	if (query(array(
 		"sql"=>"insert into uchet ".
 				"(id,point_id,session_id,status_id,user_id,project_id) values ".
-				"(".self::$uchet_id.",".self::$point_id.",0,1,".self::$user_id.",".self::$project_id.")"
+				"(".self::$uchet_id.",".self::$point_id.",0,0,".self::$user_id.",".self::$project_id.")"
 		)))
 	{
 		return true;

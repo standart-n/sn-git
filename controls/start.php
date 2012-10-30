@@ -25,7 +25,7 @@ function getControls() {
 		require_once(project."/controls/".$key.".php");
 		//sn::cl($key);
 	}
-	return true;	
+	return true;
 }
 
 function getUrl() {
