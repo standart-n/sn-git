@@ -169,6 +169,7 @@ function getProjectId() {
 		case "sn-oz-client": self::$project_id=9; return true; break;
 		case "sn-oz-upload": self::$project_id=10; return true; break;
 		case "sn-oz-server": self::$project_id=11; return true; break;
+		case "sn-oz-horoscope": self::$project_id=32; return true; break;
 		
 		case "micro-api": self::$project_id=12; return true; break;
 		case "micro-calls": self::$project_id=13; return true; break;
