@@ -160,6 +160,7 @@ function getPointId() {
 		case "micro": self::$point_id=682; return true; break;
 		case "072": self::$point_id=746; return true; break;
 		case "maestro": self::$point_id=605; return true; break;
+		case "leonardo": self::$point_id=473; return true; break;		
 	}
 	return false;
 }
@@ -190,6 +191,8 @@ function getProjectId() {
 		case "sn-git": self::$project_id=25; return true; break;
 		case "sn-cashier": self::$project_id=26; return true; break;
 		case "sn-claims": self::$project_id=27; return true; break;
+		
+		case "sn-bonus-leonardo": self::$project_id=33; return true; break;
 	}
 	return false;
 }
