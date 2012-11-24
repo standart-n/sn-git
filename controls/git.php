@@ -173,8 +173,9 @@ function getProjectId() {
 		case "sn-oz-horoscope": self::$project_id=32; return true; break;
 		
 		case "micro-api": self::$project_id=12; return true; break;
-		case "micro-calls": self::$project_id=13; return true; break;
-		case "micro-monitor": self::$project_id=14; return true; break;		
+		case "micro-calls": self::$project_id=13; return true; break
+		case "micro-monitor": self::$project_id=14; return true; break;
+		case "micro-files": self::$project_id=36; return true; break;
 
 		case "mau-lite": self::$project_id=15; return true; break;
 		case "mau-site": self::$project_id=16; return true; break;
