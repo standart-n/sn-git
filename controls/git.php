@@ -187,6 +187,7 @@ function getProjectId() {
 
 		case "shop-maestro": self::$project_id=22; return true; break;
 
+		case "sn-site": self::$project_id=38; return true; break;
 		case "sn-system": self::$project_id=23; return true; break;
 		case "sn-project": self::$project_id=24; return true; break;
 		case "sn-git": self::$project_id=25; return true; break;
