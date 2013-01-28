@@ -195,6 +195,7 @@ function getProjectId() {
 		case "sn-claims": self::$project_id=27; return true; break;
 		case "sn-registrature": self::$project_id=37; return true; break;
 		case "sn-calls": self::$project_id=39; return true; break;
+		case "sn-calls-monitor": self::$project_id=40; return true; break;
 		
 		case "sn-bonus-leonardo": self::$project_id=33; return true; break;
 		case "sn-bonus-leonardo-import": self::$project_id=35; return true; break;
