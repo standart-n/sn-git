@@ -108,7 +108,16 @@ function genUchetId() {
 }
 
 function getUserId() {
-	self::$user_id=7; return true;
+	// self::$user_id=7; return true;
+	// masha - 7
+	// support - 34
+	if (preg_match('/отдел продаж/', start::$url->msg)) {
+		self::$user_id=7;
+	} else {
+		self::$user_id=34;
+	}
+
+	return true;
 }
 
 function getPointId() {
@@ -116,7 +125,16 @@ function getPointId() {
 }
 
 function getProjectId() {
-	self::$project_id=27; return true;
+	// need switch
+	// sale - 27
+	// tech - 29
+	if (preg_match('/отдел продаж/', start::$url->msg)) {
+		self::$project_id=27; 
+	} else {
+		self::$project_id=29; 
+	}
+
+	return true;
 }
 
 } ?>
