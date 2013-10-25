@@ -41,6 +41,10 @@ function addClaim() {
 }
 
 function updateTextOfMessage($id=1) {
+
+	start::$url->msg = str_replace('отдел продаж ','',start::$url->msg);
+	start::$url->msg = str_replace('тех. поддержка ','',start::$url->msg);
+
 	if (query(array(
 		"sql"=>"update messages m ".
 				"set m.answer='".self::getAnswerAfterBuildPacket($id)."' ".
@@ -54,12 +58,12 @@ function updateTextOfMessage($id=1) {
 
 function getAnswerAfterBuildPacket($id=1) { $rg="";
 	switch ($id) {
-	case 1:
+	case 2:
 		return toWIN("".
 					 "Новая заявка на сайте!".
 					 "");
 	break;
-	case 2:
+	case 1:
 		return toWIN("".
 					 start::$url->msg.
 					 "");
